@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hw class 13</title>
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/animatedjs.css">
+
+	<link rel="stylesheet" type="text/css" href="css/v4-shims.css">
+	<link rel="stylesheet" type="text/css" href="css/svg-with-js.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<link rel="stylesheet" type="text/css" href="css/regular.min.css">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<!--font-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+
+		/*==================css===================*/
+		
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Titillium Web', sans-serif;
+			text-rendering: optimizeLegibility;
+		}
+
+			/*==================header all===================*/
+		.header{
+			background:linear-gradient(#6A4D6C,rgba(135, 80, 156, 0.57)), url(img/b3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height:95vh;
+		}
+		.logo{
+			color: #ffffff;
+			margin-top: 35px;
+			font-family: 'Titillium Web', sans-serif;
+
+		}
+
+		.menu ul li {
+			list-style: none;
+			float: right;
+			margin-top: 5px;
+			
+		}
+		.menu ul li a{
+			color: #ffffff;
+			text-transform: uppercase;
+			float: left;
+			padding: 10px 15px;
+		}
+
+		.menu ul li a:hover{
+			text-decoration: none;
+			background: #6A4D6C;
+			border-radius: 30%
+		}
+		.menu2{
+			padding-top: 140px;
+			text-align: center;
+		}
+		.menu2 h1{
+			color: #ffffff;
+			padding:20px 300px;
+			text-align: center;
+		}
+		.btn {
+			color: #ffffff;
+			padding: 25px 80px;
+			font-size: 18px;
+			text-transform: uppercase;
+			background: #F5B041;
+			text-align: center;
+			margin-bottom: 100px;
+			margin-top:60px;
+			border-radius: 5%
+			border:3px solid #000;
+		}
+		.btn a{
+			background: #f5b041;
+				box-shadow: 0 5px 10px black;
+		}
+			
+
+				/*==================section===================*/
+
+		.section{
+			background:linear-gradient(rgba(23, 194, 164, 0.88),#17C2A4), url(img/b1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+			height: 95vh;
+		}
+
+		.name{
+			font-size: 50px;
+		}
+
+		.section h1{
+			text-transform: uppercase;
+			color: #ffffff;
+			padding-top: 100px;
+		}
+		.section p{
+			padding: 20px 300px;
+			color: #ffffff;
+		}
+		h3 {
+			color: #ffffff;
+			text-transform: uppercase;
+			padding: 20px;
+
+
+		}
+		h5{
+			color: #ffffff;
+		}
+				/*==================section 2 ===================*/
+		.section2 {
+			text-align: center;
+			height: 110vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			background:linear-gradient(rgba(231, 241, 248, 0.88),#E7F1F8), url(img/b4.jpg);
+			
+		}
+
+		.section2 p{
+			padding-top: 20px;
+		}
+		.section2 h1{
+				text-transform:uppercase;
+				padding-top:  20px;
+		}
+		.section2 h2{
+			text-transform: uppercase;
+				padding-top:  20px;
+		}
+
+		.section2 img{
+			padding: 20px;
+			border-radius: 50%
+			
+		}
+
+
+		.section2 h1{
+			
+			text-transform: uppercase;
+			padding: 20px;
+		}
+		.section2 p{
+			text-transform: uppercase;
+			padding: 20px 300px;
+		}
+
+		.section2 i {
+			color: #BDD1DF;
+			font-size: 30px;
+			border-radius: 60%
+		}
+				
+				/*==================section 3 ===================*/
+
+		.section3{
+			background:linear-gradient(#ffffff,rgba(255, 255, 255, 0.85)), url(img/iiipen.jpeg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height:85vh;
+		}
+
+		.section3 p{
+			padding-top: 20px;
+			text-align: center;
+		}
+		.section3 h1{
+				text-transform:uppercase;
+				padding: 20px;
+				text-align: center;
+				
+		}
+		.section3 h2::after{
+			background: #dfe8ed;
+		}
+
+		.section3 h3{
+			color: black;
+			font-size: 20px;
+			text-align: center;
+			margin-right: 20px;
+		}
+
+		.section3  html{
+			margin-left: 10px;
+		}
+
+		
+		.section3.box{
+			margin-top: 4.5rem;
+		}
+				/*==================js===================*/
+		svg.radial-progress circle{
+			stroke-width:5;
+			text-align: center;
+
+		}
+
+		svg.radial-progress text {
+			fill:#3C4761;
+		}
+
+		svg.web-desing circle{
+			stroke:  #30BAE7 ;
+		}
+		svg.html circle{
+			stroke:  #D74680 ;
+		}
+		svg.graphic-design circle{
+			stroke:  #15C7A8 ;
+		}
+		svg.ui circle{
+			stroke:  #EB7D4B ;
+		}
+					/*==================section 4 ===================*/
+		.section4{
+			background:linear-gradient(hsl(37, 90%, 61%),rgba(245, 176, 65, 0.89)), url(img/iii.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height:155vh;
+			text-align: center;
+		}
+		.section4 h1{
+			text-transform:uppercase;
+			padding-top:  20px;
+
+		}
+		.btn{
+			margin: 10px 0px;
+		}
+		.btn button{
+			background: #EBC985;
+			padding: 10px 20px;
+			border: 0px;
+			border-radius: 5px;
+			text-transform: uppercase;
+			margin: 0px 5px;
+			transition: .5s;
+		}
+
+		.section4 i img{
+			width: 100px;
+			height: 24px;
+
+		}
+
+		.btn button:hover{
+			cursor: pointer;
+			box-shadow: inset 0 5px 3px rgba(0, 0, 0, 0.68);
+		}
+
+		.section4 img{
+			width: 350px;
+			height: 200px;
+			padding-top: 20px;
+		}
+		.section4 h4{
+			font-size: 20px;
+			padding-top: 20px;
+		}
+		.section4 a{
+			background: #17C2A4;
+			text-transform: uppercase;
+			border-color: #14A58C;
+
+		}
+			/*==================section 5 ===================*/
+		.section5{
+			background:linear-gradient(rgba(204, 51, 153, 0.98),rgba(226, 98, 157, 0.92)), url(img/iii1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height:100vh;
+			text-align: center;
+			color: #ffffff;
+
+		}
+		.section5 h1{
+			text-transform: uppercase;
+			padding-top: 20px;
+			
+		}
+		.section5 p{
+			text-transform: uppercase;
+			padding: 10px;
+
+		}
+
+		
+		.section5 i img{
+			width: 100px;
+			height: 5px;
+			padding-bottom: 
+			border-radius:none;
+		}
+		.section5 img{
+			width: 100px;
+			height: 80px;
+			border-radius: 50%
+			
+		}
+		
+		.section5 h5{
+			font-size: 20px;
+			font-style: italic;
+			text-align: justify;
+			
+			
+		}
+
+		.section5 h4{
+			text-transform: uppercase;
+			float: left;
+		
+			font-size: 20px;
+			padding-top: 5px;
+		}
+		.section5 h6{
+			color: #EFA18F;
+			float: left;
+			
+		}
+
+				/*==================section 6 ===================*/
+		.form{
+
+          background:linear-gradient(#3C5499,rgba(58, 58, 239, 0.92)), url(img/iiipen.jpeg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			height:100vh;
+			text-align: center;
+			color: #ffffff;
+		}
+		.form h1{
+			text-transform: uppercase;
+			padding-top: 20px;
+		}
+		.form input{
+			width: 430px;
+			height: 40px;
+			background-color: #3C5499;
+			border: 0px;
+			padding: 25px;
+			margin: 20px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.68);
+			border-radius: 5px;
+		}
+		.form textarea {
+			width: 1000px;
+			height: 200px;
+			background-color: #3C5499;
+			border:  0px;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 20px;
+		}
+		.send input{
+			width: 200px;
+			height: 60px;
+			background-color: #299EC5;
+			padding: 10px;
+		}
+				/*==================footer===================*/
+
+		.footer{
+			background: #344B8E;
+			height: 70px;
+			padding: 23px;
+
+		}
+
+		.footer a{
+			color: #ffffff;
+			background: no-repeat;
+			padding: 30px;
+			text-decoration: none;
+
+		}
+
+		.footer a:hover{
+			color: #299EC5;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="header">					<!--header -->
+		<div class="container">
+			<div class="row">
+				<div class="container">
+					  <div class="row">
+					    <div class="col-sm">
+		 					 <div class="col-sm-3">
+    					 <a href="">
+						<img src="imgpdf/logo.png" alt="cuda" class="logo">
+						</a>
+    </div>
+					    </div>
+					    <div class="col-sm-9">
+					     <div class="menu">
+     	 <ul>
+      	<li><a href="#">home</li>			<!--menu2 -->
+      	<li><a href="#">about</li>
+      	<li><a href="#">blog</li>
+      	<li><a href="#">work</li>
+      	<li><a href="#">more</li>	
+
+      </ul>
+       </div>
+					    </div>
+					   
+					  </div>
+					</div>
+			</div>
+		</div>								
+		 <div class="menu2">
+     	<h1>Lorem ipsum dolor sit amet consectetur adipisicing consectetur </h1>
+
+     	<a class="btn" href="a">work with us</a>
+     </div>								<!--menu2 end-->
+	</div>								<!--header end-->
+
+										<!--section 1 -->
+				<div class="section">
+				<h1>services we provide</h1>
+				<img src="img/----------.png" alt="">
+
+				    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h5>
+
+				<div class="container">
+				  <div class="row">
+				    <div class="col-sm-3">
+						 <a href="a" class="icon">
+						<img src="imgpdf/flag.png" alt="flag">
+
+					</a>
+					<h3>branding</h3>
+						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h5>
+				    </div>
+				    <div class="col-sm-3">
+				     <a href="a" class="icon">
+						<img src="imgpdf/crayon.png" alt="crayon">
+
+					</a>
+					<h3>desing</h3>
+						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h5>
+				    </div>
+				    <div class="col-sm-3">
+				      <a href="a"class="icon">
+						<img src="imgpdf/gears.png" alt="gears">
+
+					</a>
+					<h3>desing</h3>
+						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h5>
+				    </div>
+
+				     <div class="col-sm-3">
+				      <a href="a"class="icon">
+						<img src="imgpdf/rocket.png" alt="rockt">
+
+					</a>
+					<h3>desing</h3>
+						<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h5>
+				    </div>
+				  </div>
+				</div>								
+		</div>								
+	</div>										<!--section end-->
+
+
+													<!--section2-->
+	<div class="section2">
+		<h1>meet our beautifull team</h1>
+		<img src="img/----------.png" alt="">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+		<div class="row">
+			  <div class="col-sm-3">
+				<a href="#"><img src="imgpdf/1.jpg" alt="#" class="pic"></a>
+				<h2>annahter</h2>
+				<a href="#">
+					<h4>Lorem ipsum </h4></a>
+					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h6>
+
+					 <div class="fa">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fas fa-comments"></i>
+				<i class="fas fa-address-book"></i>
+			</div>
+			  </div>
+
+			 
+			  <div class="col-sm-3">
+					<a href="#"><img src="imgpdf/1.jpg" alt="#"></a>
+				<h2>annahter</h2>
+				<a href="#">
+					<h4>Lorem ipsum </h4></a>
+					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h6>
+
+					 <div class="fa">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fas fa-comments"></i>
+				<i class="fas fa-address-book"></i>
+			</div>
+			  </div>
+			  <div class="col-sm-3">
+					<a href="#"><img src="imgpdf/1.jpg" alt="#"></a>
+				<h2>annahter</h2>
+				<a href="#">
+					<h4>Lorem ipsum </h4></a>
+					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h6>
+
+					 <div class="fa">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fas fa-comments"></i>
+				<i class="fas fa-address-book"></i>
+			</div>
+			  </div>
+			  <div class="col-sm-3">
+					<a href="#"><img src="imgpdf/1.jpg" alt="#"></a>
+				<h2>annahter</h2>
+				<a href="#">
+					<h4>Lorem ipsum </h4></a>
+					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.Lorem ipsum dolor sit amet consectetur adipisicing elit Adipisci obcaecati.</h6>
+
+					 <div class="fa">
+				<i class="fab fa-twitter-square"></i>
+				<i class="fas fa-comments"></i>
+				<i class="fas fa-address-book"></i>
+			</div>
+			  </div>
+			</div>
+		
+			</div>
+											<!--section2 end-->
+
+
+
+													<!--section3-->
+	<div class="section3">
+
+		<h1>we got skills!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae culpa nesciunt unde harum reprehender <br>
+			<img src="img/----------.png" alt="">
+			<br>It minima vel. Officiis molestiae maxime animi!</p>
+				<div class="container">
+				  <div class="row">
+				    <div class="col-sm-3">
+				      
+					<svg class="radial-progress web-desing" data-percentage="90" viewBox="0 0 80 80">
+					  <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+					  <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+					  <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+					</svg>
+
+					<h3>WEB DESIGN</h3>
+
+				    </div>
+				    <div class="col-sm-3">
+				     <svg class="radial-progress html " data-percentage="75" viewBox="0 0 80 80">
+					  <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+					  <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+					  <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+					</svg>
+
+					<h3 class="html">HTML/CSS</h3>
+				    </div>
+				    <div class="col-sm-3">
+				     <svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+					  <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+					  <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+					  <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+					</svg>
+
+					<h3>GRAPHIC DESIGN</h3>
+				    </div>
+				     <div class="col-sm-3">
+				     <svg class="radial-progress ui" data-percentage="85" viewBox="0 0 80 80">
+					  <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+					  <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+					  <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+					</svg>
+
+					<h3>UI/UX</h3>
+				    </div>
+				  </div>
+				</div>
+		
+	
+		
+	</div>
+									<!--section3 end-->
+
+												<!--section4-->
+			<div class="section4">
+					
+					<h1>OUR PORTFOLIO</h1>
+					
+					<i><img  src="img/----------.png" alt=""></i>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse magni beatae ullam <br>Blanditiis quasi aliquid eos. Sit laborum natus!</p>
+
+
+					<div class="btn">
+					<button type="button" data-filter="all">all</button>
+					<button type="button" data-filter=".web">web</button>
+					<button type="button" data-filter=".apps">apps</button>
+					<button type="button" data-filter=".icons">icons</button>
+					</div>
+
+
+					<div class="container">
+					  <div class="row mix">
+					    <div class="col-sm-6 mix apps web">
+					     <img src="imgpdf/portfolio1.png" alt="">
+					     <h4>Lorem ipsum dolor si</h4>
+					    </div>
+
+					    <div class="col-sm-6 mix apps icons">
+					     <img src="imgpdf/portfolio2.png" alt="">
+					     <h4>Lorem ipsum dolor si</h4>
+					    </div>
+
+					    <div class="col-sm-6 mix web">
+					     <img src="imgpdf/portfolio3.png" alt="">
+					     <h4>Lorem ipsum dolor si</h4>
+					    </div>
+
+					    <div class="col-sm-6 mix apps icons">
+					     <img src="imgpdf/portfolio4.png" alt="">
+					     <h4>Lorem ipsum dolor si</h4>
+
+
+					    </div>
+					    
+					 </div>
+					</div>
+
+					 <br>
+					     <a class="btn" href="a">Load more project</a>
+			</div>
+												<!--section4 end-->
+
+
+									<!--section5-->
+
+				<div class="section5">
+					 <h1>what people say about us</h1>
+						     <i><img  src="img/----------.png" alt=""></i>
+						     <p>our client love us</p>
+					<div class="container">
+						  <div class="row">
+						    
+                              <div class="col-sm-2">
+						    <img src="imgpdf/1.jpg" alt="">
+                              </div>
+                              <div class="col-sm-4">
+						 	<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequuntur magnam perferendis esse cupiditate accusamus, ad ex inventore! Nisi, temporibus!"</h5>
+						 	<h4>Lorem ipsum</h4><br><br>
+						 	<h6>CEO of Pinterest</h6>
+
+						    </div>
+                              
+                               <div class="col-sm-2">
+						    <img src="imgpdf/1.jpg" alt="">
+                              </div>
+                              <div class="col-sm-4">
+						 	<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequuntur magnam perferendis esse cupiditate accusamus, ad ex inventore! Nisi, temporibus!"</h5>
+						 	<h4>Lorem ipsum</h4><br><br>
+						 	<h6>CEO of Pinterest</h6>
+
+						    </div> <div class="col-sm-2">
+						    <img src="imgpdf/1.jpg" alt="">
+                              </div>
+                              <div class="col-sm-4">
+						 	<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequuntur magnam perferendis esse cupiditate accusamus, ad ex inventore! Nisi, temporibus!"</h5>
+						 	<h4>Lorem ipsum</h4><br><br>
+						 	<h6>CEO of Pinterest</h6>
+
+						    </div>
+                               <div class="col-sm-2">
+						    <img src="imgpdf/1.jpg" alt="">
+                              </div>
+                              <div class="col-sm-4">
+						 	<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequuntur magnam perferendis esse cupiditate accusamus, ad ex inventore! Nisi, temporibus!"</h5>
+                                  <h4>Lorem ipsum</h4><br><br>
+						 	<h6>CEO of Pinterest</h6>
+
+						    </div>  
+						</div>	  
+				</div>
+
+				</div>	
+				                                <!--form -->
+            <div class="form">
+                <h1>get in touch</h1>
+                <img src="img/---------blue-.png">
+                <address>100 rod Lorem ipsum dolor sit amet,p0st: consectetur adipisicing elit.</address>
+                
+                
+               <form action="" method="get" accept-charset="utf-8">
+                <div class="container">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="name" placeholder="Your name*" required>
+                        </div>
+                        <div class="col-sm-6">
+                           <input type="email" name="email" placeholder="Your Email*" required>
+                        </div>
+                        <div class="col-sm-12">
+                        	<textarea name="message" rows="10" cols="30" placeholder="Your Message*"required></textarea>
+                        </div>
+
+                        <div class="col-sm-12">
+                        	 <div class="send">
+                        	 	<input type="submit" value="SEND MESSAGE" class="btn btn-submit">
+                        	 </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+               </form>
+                   
+
+                  								  <!-------footer------->
+                    <div class="footer">
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Facebook</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Twitter</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Google+</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Linkend</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Instagrem</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Dribbel</a>
+                    	<a href="mailto:joe@example.com?subject=feedback" email me>Facebook</a>
+                    </div>
+                   								 <!-------footer end------->
+
+            </div>
+    
+        
+         
+            
+                                                <!--section6 end-->
+
+	
+
+					<!-------java-------->
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script src="js/mixitup.min.js">
+<script src="js/selectivizr-min.js"></script>
+	
+	<script src="js/animatedradial.js"></script>
+	<script src="js/respond.src.js"></script>
+	<script src="js/respond.matchmedia.addListener.min.js"></script>
+	<script src="main.js"></script>
+
+	<script src="js/html5shiv.min.js">
+		
+		
+	
+</body>
+</html>
